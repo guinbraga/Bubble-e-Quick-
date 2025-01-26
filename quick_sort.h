@@ -6,8 +6,8 @@ void QuickSort_particao(PRATO* pratos, int esquerda, int direita, int *i, int *j
     *i = esquerda; *j = direita;
     pivo = pratos[(*i+*j)/2];
     do {
-        while (pratos[*i].prioridade < pivo.prioridade || (pratos[*i].prioridade == pivo.prioridade && pratos[*i].tempo < pivo.tempo)) (*i)++;
-        while (pratos[*j].prioridade > pivo.prioridade || (pratos[*j].prioridade == pivo.prioridade && pratos[*j].tempo > pivo.tempo)) (*j)--;
+        while (pratos[*i].prioridade > pivo.prioridade || (pratos[*i].prioridade == pivo.prioridade && pratos[*i].tempo < pivo.tempo)) (*i)++;
+        while (pratos[*j].prioridade < pivo.prioridade || (pratos[*j].prioridade == pivo.prioridade && pratos[*j].tempo > pivo.tempo)) (*j)--;
         if (*i <= *j){
             aux = pratos[*i];
             pratos[*i] = pratos[*j];

@@ -23,7 +23,7 @@ int main(){
     comeco = clock();
     for (int i = 0; i<299999; ++i){
         for (int j = 0; j<299999-i; ++j){
-            if (prato[j].prioridade > prato[j+1].prioridade || (prato[j].prioridade == prato[j+1].prioridade && prato[j].tempo > prato[j+1].tempo)){
+            if (prato[j].prioridade < prato[j+1].prioridade || (prato[j].prioridade == prato[j+1].prioridade && prato[j].tempo > prato[j+1].tempo)){
                 PRATO temp = prato[j];
                 prato[j] = prato[j+1];
                 prato[j+1] = temp;
