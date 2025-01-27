@@ -3,7 +3,7 @@
 O código acima demonstra a diferenca entre os métodos de ordenacao quicksort e bubblesort em um array de 300.000 itens. Os itens, a fins de ilustracao,
 são pratos de um restaurante e foram ordenados com base na sua prioridade (decrescente) e como critério de desempate, o menor tempo de preparo.
 
-Os algoritmos tiveram uma diferenca significativa de tempo: enquanto o bubblesort levou, em média, 420 segundos para ordenar o array, o quicksort levou
+Os algoritmos tiveram uma diferenca significativa de tempo: enquanto o bubblesort levou, em média, 280 segundos para ordenar o array, o quicksort levou
 apenas 0.05 segundos. Essa diferenca esta de acordo com a expectativa a partir da analise de eficiencia de algoritmos, considerando que o bubblesort
 é n² e o quicksort é log(n).
 
